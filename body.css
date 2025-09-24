@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Benzin';
+    src: url(fonts/benzin-semibold.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('images/background/rainbow-bar.png');
+    background-position: 20% 30%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links {
+    position: absolute;
+    left:17.5%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.links a{
+    font-family: 'Benzin';
+    font-size: 40px;
+    color:rgb(41, 40, 34);
+    padding : 13px 4px;
+    text-decoration: none;
+ text-shadow:
+        0 0 12px rgb(253, 253, 251),
+        0 0 24px rgb(253, 253, 251),
+        -4px -4px 0 rgb(253, 253, 251),
+         4px -4px 0 rgb(253, 253, 251),
+        -4px  4px 0 rgb(253, 253, 251),
+         4px  4px 0 rgb(253, 253, 251);
+    transition: font-size 0.1s, transform 0.5s;
+}
+.links a:hover {
+    font-size: 60px;
+    transform: scale(1.1);
+    position: relative;
+    left: 5%;
+}
