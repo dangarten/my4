@@ -3,7 +3,12 @@
   top: 0;
   right: 0;
 }
-
 .eclipse img {
   width: 200px;
+}
+.eclipseblackbar {
+  width: 350px;
+  height: 30px;
+  border-radius: 15px;
+  background: black;
 }

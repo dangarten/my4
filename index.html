@@ -7,14 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <audio id="backgroundmusic" src="music/april14th.mp3" autoplay loop></audio>
 <div class="eclipse">
     <img src="images/background/side-eclipse.png" alt="">
+    <div class="eclipseblackbar"></div>
 </div>
 <div class="links">
-    <a href="#">Profile</a>
-    <a href="#">Social Links</a>
-    <a href="#">Communities</a>
-    <a href="#">Projects</a></div>
-    
+    <a href="#" onmouseover="playhoversoundeffect()">Profile</a>
+    <a href="#" onmouseover="playhoversoundeffect()">Social Links</a>
+    <a href="#" onmouseover="playhoversoundeffect()">Communities</a>
+    <a href="#" onmouseover="playhoversoundeffect()">Projects</a>
+</div> 
+
+<script>
+    const backgroundmusic = document.getElementById('backgroundmusic');
+    backgroundmusic.volume = 0.05;
+
+    const hoversoundeffect = new Audio('audio/hoverse.mp3');
+    function playhoversoundeffect() {
+        hoversoundeffect.currentTime = 0;
+        hoversoundeffect.play();
+    }
+</script>
 </body>
 </html>
