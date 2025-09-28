@@ -1,4 +1,4 @@
-// Hover Sound Effect
+       // Hover Sound Effect
 const hoversoundeffect = new Audio('audio/hoverse.mp3');
     function playhoversoundeffect() {
         hoversoundeffect.currentTime = 0; 
@@ -17,6 +17,7 @@ const hoversoundeffect = new Audio('audio/hoverse.mp3');
             document.getElementById("buttonmusic").src = "images/icons/volumeoff.png";
         }
     }
+togglemusic();
 // Calendar 
 function calendar() {
     const divcalendar = document.querySelector('.calendar');
@@ -28,3 +29,10 @@ function calendar() {
     divcalendar.innerHTML = `<span>${day}/${month}</span> <span class="day">${weekday}</span>`;
 }
 calendar();
+
+
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        location.reload();
+    }
+});
