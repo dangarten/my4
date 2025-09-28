@@ -2,17 +2,21 @@
     font-family: 'Benzin';
     src: url(fonts/benzin-semibold.ttf);
 }
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-image: url('images/background/rainbow-bar.png');
-    background-position: 20% 30%;
-    background-repeat: no-repeat;
-    background-size: contain;
+.background{
+    position: fixed;
+    height: 100%;
+    left: 280px;
+    z-index: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 0;
+}   
+
+.grassbackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
 .links {
     position: absolute;
@@ -42,4 +46,17 @@ body {
     transform: scale(1.1);
     position: relative;
     left: 5%;
+}
+.volume{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.volume img{
+    width: 50px;
+}
+.volume img:hover{
+    width: 55px;
+    left: 50%;
+    transition: 0.1s;
 }
